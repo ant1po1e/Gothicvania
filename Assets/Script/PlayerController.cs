@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             anim.SetBool("Attack", true);
         }
