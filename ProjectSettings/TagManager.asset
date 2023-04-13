@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Weapon
   - Enemy
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Background
   - Foreground
   - Enemy
-  - 
+  - Item
   - 
   - 
   - 

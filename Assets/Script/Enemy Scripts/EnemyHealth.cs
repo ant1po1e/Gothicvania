@@ -32,11 +32,13 @@ public class EnemyHealth : MonoBehaviour
             {
                 rb.AddForce(new Vector2(-enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
             }
-            
+
             StartCoroutine(Damager());
-            if (enemy.healthPoints <=0)
+            if (enemy.healthPoints <= 0)
             {
-                Instantiate(deathEffect, transform.position, Quaternion.identity);  
+                GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+                Destroy(effect, 0.3f);
+                Exp.instance.expMod(GetComponent<Enemy>().expToGive);
                 Destroy(gameObject);
             }
         }
