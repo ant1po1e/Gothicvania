@@ -38,7 +38,7 @@ public class EnemyHealth : MonoBehaviour
             {
                 GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
                 Destroy(effect, 0.3f);
-                Exp.instance.expMod(GetComponent<Enemy>().expToGive);
+                Experience.instance.AddExperience(GetComponent<Enemy>().expToGive);
                 Destroy(gameObject);
             }
         }

@@ -17,6 +17,16 @@ public class PlayerHealth : MonoBehaviour
     Blink material;
     SpriteRenderer sprite;
 
+    public static PlayerHealth instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     void Start()
     {
         material = GetComponent<Blink>();
