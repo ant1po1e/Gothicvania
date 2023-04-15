@@ -29,4 +29,10 @@ public class BossUI : MonoBehaviour
         bossPanel.SetActive(true);
         bossBarrier.SetActive(true);
     }
+
+    public void BossDeactive()
+    {
+        bossPanel.SetActive(false);
+        bossBarrier.SetActive(false);
+    }
 }
