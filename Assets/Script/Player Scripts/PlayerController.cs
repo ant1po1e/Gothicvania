@@ -55,12 +55,14 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
+            AudioManager.instance.PlayAudio(AudioManager.instance.playerHit);
             anim.SetBool("Attack", true);
         }
-        else
+        else if (Input.GetButtonUp("Fire1"))
         {
+            AudioManager.instance.playerHit.Stop();
             anim.SetBool("Attack", false);
         }
     }

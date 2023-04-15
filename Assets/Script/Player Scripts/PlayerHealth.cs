@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
     Rigidbody2D rb;
     Blink material;
     SpriteRenderer sprite;
+    public GameObject gameOverPanel;
 
     public static PlayerHealth instance;
 
@@ -28,7 +29,9 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void Start()
+
     {
+        gameOverPanel.SetActive(false);
         material = GetComponent<Blink>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
@@ -62,8 +65,11 @@ public class PlayerHealth : MonoBehaviour
             }
 
             if (health <= 0)
-            {
-                print("Player Dead");
+            { 
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                AudioManager.instance.backgroundMusic.Stop();
+                AudioManager.instance.PlayAudio(AudioManager.instance.gameOver);
             }    
         }
     }

@@ -12,6 +12,7 @@ public class Potion : MonoBehaviour
         {
             collision.GetComponent<PlayerHealth>().health += healthToGive;
             Destroy(gameObject);
+            AudioManager.instance.PlayAudio(AudioManager.instance.heal);
         }
     }
 }
