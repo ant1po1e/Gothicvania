@@ -10,6 +10,13 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "MainMenu")
+        {
+            AudioManager.instance.backgroundMusic.Stop();
+            AudioManager.instance.PlayAudio(AudioManager.instance.mainMenu);
+        }
+        Time.timeScale = 1;
         optionPanel.SetActive(false);
         creditsPanel.SetActive(false);
     }
@@ -21,6 +28,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
 

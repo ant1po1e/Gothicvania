@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioMixer musicMixer, effectsMixer;
 
-    public AudioSource backgroundMusic, hit, enemyDead, gems, heal;
+    public AudioSource backgroundMusic, playerHit, enemyDead, gems, heal, arrow, lvlUp, flame, bossFight, mainMenu, gameOver;
 
     public static AudioManager instance;
 
