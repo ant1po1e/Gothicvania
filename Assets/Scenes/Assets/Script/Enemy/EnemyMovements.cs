@@ -66,7 +66,7 @@ public class EnemyMovements : MonoBehaviour
                 if (!isWaiting)
                 {
                     anim.SetBool("Idle", false);
-                    rb.velocity = new Vector2(-speed * Time.deltaTime, rb.velocity.y);
+                    // walksRight = false;
 
                 }
                 if (Vector2.Distance(transform.position, pointA.position) < 0.2f)
@@ -87,7 +87,7 @@ public class EnemyMovements : MonoBehaviour
                 {
                     anim.SetBool("Idle", false);
 
-                    rb.velocity = new Vector2(speed * Time.deltaTime, rb.velocity.y);
+                    // walksRight = true;
 
                 }
                 if (Vector2.Distance(transform.position, pointB.position) < 0.2f)
@@ -118,6 +118,10 @@ public class EnemyMovements : MonoBehaviour
     public void Flip()
     {
         walksRight = !walksRight;
+        if (walksRight && transform.localScale.x < 0)
+        {
+
+        }
         transform.localScale *= new Vector2(-1, transform.localScale.y);
     }
 }

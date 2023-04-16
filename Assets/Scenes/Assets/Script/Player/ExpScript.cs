@@ -41,8 +41,10 @@ public class ExpScript : MonoBehaviour
         {
             expNextLevel *= 1.6f;
             currentExp = 0;
+            currentLvl += 1;
             PlayerHealth.instance.maxHealth *= 1.2f;
             Spears.instance.maxSpears += 5;
+            PlayerStats.instance.attack += (1 * currentLvl / 10);
             currentLvlText.text = "lv. " + currentLvl.ToString();
         }
     }

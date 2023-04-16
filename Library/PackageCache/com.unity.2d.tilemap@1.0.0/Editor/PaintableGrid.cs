@@ -416,7 +416,6 @@ namespace UnityEditor.Tilemaps
                             else
                                 Paint(position);
                         }
-                        ResetPreviousMousePositionToCurrentPosition();
                         Event.current.Use();
                         GUI.changed = true;
                     }

@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1ca68d0ecfddc4f9764b05feba2385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cashToGive: 500
+  cashToGive: 40
 --- !u!58 &8267189267563817228
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5206979641839324323}
+  - component: {fileID: -1430426554007165479}
+  - component: {fileID: -2196500467840650227}
   - component: {fileID: 5206979641839324332}
   - component: {fileID: 2775042785063721832}
   - component: {fileID: 2684914457200732203}
@@ -34,6 +36,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1430426554007165479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206979641839324335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51133e4db2607546a18cbcd03764fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2196500467840650227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206979641839324335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02674101a3953114f958953f56a59d7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponAttack: 3
+  damageText: {fileID: 5917512440646926804, guid: 334489ec6f0a9c44cb8ebdd510302342, type: 3}
 --- !u!212 &5206979641839324332
 SpriteRenderer:
   m_ObjectHideFlags: 0

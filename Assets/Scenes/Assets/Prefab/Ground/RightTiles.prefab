@@ -178,9 +178,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8116648674708816062}
   - component: {fileID: 7403046716868882819}
+  - component: {fileID: 6311363080223683731}
   m_Layer: 9
   m_Name: RightTiles
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,6 +216,33 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.08}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.12023634, y: -0.3209334}
+  - {x: -0.15726471, y: -0.32112724}
+  - {x: -0.16071755, y: -0.00014038384}
+  - {x: 0.15952379, y: -0.14119942}
+  - {x: 0.15936065, y: -0.21991034}
+  - {x: 0.1147607, y: -0.3211469}
+  - {x: -0.12062132, y: -0.3211469}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &6311363080223683731
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045539714658214176}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.08}

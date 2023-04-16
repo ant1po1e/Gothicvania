@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2632755818513474075}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PillarMedium
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,6 +42,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2632755818513474075}
     m_Modifications:
+    - target: {fileID: 883784560885714904, guid: 90d0999b6849b0f4a8b432987b215ddd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913188298863863100, guid: 90d0999b6849b0f4a8b432987b215ddd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3966336782896019930, guid: 90d0999b6849b0f4a8b432987b215ddd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -90,6 +98,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PillarBody3
       objectReference: {fileID: 0}
+    - target: {fileID: 4327643018873147153, guid: 90d0999b6849b0f4a8b432987b215ddd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327643018873147153, guid: 90d0999b6849b0f4a8b432987b215ddd, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328683330486122649, guid: 90d0999b6849b0f4a8b432987b215ddd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90d0999b6849b0f4a8b432987b215ddd, type: 3}
 --- !u!4 &4229659562789428918 stripped
@@ -104,9 +124,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2632755818513474075}
     m_Modifications:
+    - target: {fileID: 3755762967415056215, guid: 7d2982d3482439a479c994d423db5448, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4696950874308617731, guid: 7d2982d3482439a479c994d423db5448, type: 3}
       propertyPath: m_Name
       value: PillarBottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 4696950874308617731, guid: 7d2982d3482439a479c994d423db5448, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6375321107579921700, guid: 7d2982d3482439a479c994d423db5448, type: 3}
       propertyPath: m_RootOrder
@@ -166,9 +194,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2632755818513474075}
     m_Modifications:
+    - target: {fileID: 1456501209664596847, guid: e027df732608f824b86836702cdef827, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1705949614313723587, guid: e027df732608f824b86836702cdef827, type: 3}
       propertyPath: m_Name
       value: PillarBody2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705949614313723587, guid: e027df732608f824b86836702cdef827, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705949614313723587, guid: e027df732608f824b86836702cdef827, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658324791578419015, guid: e027df732608f824b86836702cdef827, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296012548577145572, guid: e027df732608f824b86836702cdef827, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8035943625015479216, guid: e027df732608f824b86836702cdef827, type: 3}
       propertyPath: m_RootOrder
@@ -228,9 +276,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2632755818513474075}
     m_Modifications:
+    - target: {fileID: 6679646977178535612, guid: 78621a0e0045f974c81a164fb57d0eb3, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8133007248420010186, guid: 78621a0e0045f974c81a164fb57d0eb3, type: 3}
       propertyPath: m_Name
       value: PillarTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133007248420010186, guid: 78621a0e0045f974c81a164fb57d0eb3, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8590940683917198051, guid: 78621a0e0045f974c81a164fb57d0eb3, type: 3}
       propertyPath: m_RootOrder

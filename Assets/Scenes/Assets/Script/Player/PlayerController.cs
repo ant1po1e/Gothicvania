@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        FlipCharacter();
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, groundCheckRadius, whatIsGround);
 
         if (isGrounded)
@@ -33,8 +34,8 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("Jump", true);
         }
 
-        FlipCharacter();
         Attack();
+        Jump();
         if (transform.position.x < -3.4f)
         {
             transform.position = new Vector2(-3.4f, transform.position.y);
@@ -44,7 +45,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
-        Jump();
     }
 
     public void Movement()
