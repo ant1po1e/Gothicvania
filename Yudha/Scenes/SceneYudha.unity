@@ -10630,8 +10630,8 @@ MonoBehaviour:
   bossDead: {fileID: 1373246274}
   masterVol: -28.3
   effectsVol: -64.5
-  masterSlider: {fileID: 0}
-  effectsSlider: {fileID: 0}
+  masterSlider: {fileID: 1905730354}
+  effectsSlider: {fileID: 832379836}
 --- !u!1 &2051494111
 GameObject:
   m_ObjectHideFlags: 0
