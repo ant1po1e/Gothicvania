@@ -12,7 +12,17 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask whatIsGround;
     Animator anim;
+
+    public static PlayerController instance;
     // Start is called before the first frame update
+    public void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -73,12 +83,14 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
+            AudioManager.instance.PlayAudio(AudioManager.instance.playerHit);
             anim.SetBool("Attack", true);
         }
-        else
+        else if (Input.GetButtonUp("Fire1"))
         {
+            AudioManager.instance.playerHit.Stop();
             anim.SetBool("Attack", false);
         }
     }

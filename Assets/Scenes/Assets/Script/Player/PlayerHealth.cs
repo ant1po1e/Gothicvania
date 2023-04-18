@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -16,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
     public float knockbackForceY;
     Animator anim;
     public static PlayerHealth instance;
-
+    public GameObject gameOverPanel;
     private void Awake()
     {
         if (instance == null)
@@ -28,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameOverPanel.SetActive(false);
         rb = GetComponent<Rigidbody2D>();
         material = GetComponent<Blink>();
         sprite = GetComponent<SpriteRenderer>();
@@ -64,7 +67,23 @@ public class PlayerHealth : MonoBehaviour
 
             if (health <= 0)
             {
-                print("player ded");
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                gameObject.SetActive(false);
+                AudioManager.instance.backgroundMusic.Stop();
+                AudioManager.instance.playerHit.Stop();
+                AudioManager.instance.enemyDead.Stop();
+                AudioManager.instance.gems.Stop();
+                AudioManager.instance.heal.Stop();
+                AudioManager.instance.arrow.Stop();
+                AudioManager.instance.lvlUp.Stop();
+                AudioManager.instance.flame.Stop();
+                AudioManager.instance.buttonUI.Stop();
+                AudioManager.instance.gameOver.Stop();
+                AudioManager.instance.bossDead.Stop();
+                AudioManager.instance.bossBGM.Stop();
+                AudioManager.instance.PlayAudio(AudioManager.instance.gameOver);
+
             }
         }
     }

@@ -42,6 +42,7 @@ public class EnemyHealth : MonoBehaviour
 
             if (enemy.healthPoints <= 0)
             {
+                AudioManager.instance.PlayAudio(AudioManager.instance.enemyDead);
                 Instantiate(deathEffect, transform.position, Quaternion.identity);
                 ExpScript.instance.expModifier(enemy.expToGive);
                 Destroy(gameObject);
